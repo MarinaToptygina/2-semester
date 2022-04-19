@@ -64,7 +64,6 @@ int is_bracket(char c)
 
     return 0;
 }
-
 int check(const char* exp)
 {
     Stack* brackets = nullptr;
@@ -92,8 +91,8 @@ int check(const char* exp)
 
     return 0;
 }
-void check_expression(){
-
+int main()
+{
 
     const char* exp = "{()}";
     int res = check(exp);
@@ -103,4 +102,5 @@ void check_expression(){
     else
         cout << "not true: " << res << endl;
 
+    return 0;
 }
